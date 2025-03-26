@@ -42,9 +42,9 @@ calculos = []
 
 @app.route("/soma", methods = ["POST"])
 def soma():
-    dados_recebidos = request.get_json()
-    num1 = float(dados_recebidos['num1'])
-    num2 = float(dados_recebidos['num2'])
+    dados_recebido = request.get_json()
+    num1 = float(dados_recebido['num1'])
+    num2 = float(dados_recebido['num2'])
     resultado = num1 + num2
     calculos.append(
         {    
