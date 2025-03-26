@@ -58,7 +58,3 @@ def soma():
 @app.route("/calculos", methods = ["GET"])
 def mostrarSomas():
     return calculos
-
-
-
-
