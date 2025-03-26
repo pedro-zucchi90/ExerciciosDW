@@ -1,4 +1,5 @@
 from flask import Flask, request
+import uuid
 
 app = Flask(__name__)
 
@@ -48,6 +49,7 @@ def soma():
     resultado = num1 + num2
     calculos.append(
         {    
+            "id": uuid.uuid4(),
             "num1": num1,
             "num2": num2,
             "resultado": resultado
