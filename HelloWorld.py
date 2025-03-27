@@ -67,4 +67,5 @@ def deletar(id):
     id_uuid = uuid.UUID(id)
     calculos[:] = [calculo for calculo in calculos if calculo['id'] != id_uuid]
     
-    return {"mensagem": "Cálculo removido com sucesso"}
+    return {"mensagem": "calculo removido com sucesso"}
+
