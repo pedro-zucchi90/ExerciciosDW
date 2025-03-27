@@ -49,7 +49,7 @@ def soma():
     resultado = num1 + num2
     calculos.append(
         {    
-            "id": uuid.uuid4(),
+            "id": str(uuid.uuid4()),
             "num1": num1,
             "num2": num2,
             "resultado": resultado
@@ -60,3 +60,11 @@ def soma():
 @app.route("/calculos", methods = ["GET"])
 def mostrarSomas():
     return calculos
+
+@app.route("/deletar/<id>", methods=['DELETE'])
+def deletar(id):
+    global calculos
+    id_uuid = uuid.UUID(id)
+    calculos[:] = [calculo for calculo in calculos if calculo['id'] != id_uuid]
+    
+    return {"mensagem": "Cálculo removido com sucesso"}

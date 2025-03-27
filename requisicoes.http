@@ -11,3 +11,7 @@ Content-Type: application/json
 
 GET  http://localhost:5000/calculos
 Content-Type: application/json
+
+###
+
+DELETE  http://localhost:5000/deletar/203a8582-99c7-4f08-b782-d59d248e5519
