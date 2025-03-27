@@ -3,7 +3,7 @@ POST  http://localhost:5000/soma
 Content-Type: application/json
 
 {
-    "num1": 7,
+    "num1": 6,
     "num2": 7
 }
 
@@ -14,4 +14,14 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:5000/deletar/203a8582-99c7-4f08-b782-d59d248e5519
+DELETE  http://localhost:5000/deletar/296a138b-a402-41cf-8f7e-b2642489036e
+
+###
+
+PUT http://localhost:5000/editar/8f525e35-553d-4ec5-8c8e-5eb82ea0f9d1
+Content-Type: application/json
+
+{
+    "num1": 3,
+    "num2": 9 
+}
