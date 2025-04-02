@@ -14,11 +14,11 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:5000/deletar/296a138b-a402-41cf-8f7e-b2642489036e
+DELETE  http://localhost:5000/deletar/d8a4a7a9-f2f0-443d-810b-663bc9bcdccc
 
 ###
 
-PUT http://localhost:5000/editar/8f525e35-553d-4ec5-8c8e-5eb82ea0f9d1
+PUT http://localhost:5000/editar/1ff65464-11e2-4b59-97fd-e91e423ac0c2
 Content-Type: application/json
 
 {
