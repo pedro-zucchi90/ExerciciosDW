@@ -21,9 +21,13 @@ def soma():
     )
     return {'resultado': resultado}
 
+# ------------------------------------------------
+
 @app.route("/calculos", methods=["GET"])
 def mostrarSomas():
     return calculos
+
+# ------------------------------------------------
 
 @app.route("/deletar/<id>", methods=["DELETE"])
 def deletar(id):
@@ -33,6 +37,8 @@ def deletar(id):
     calculos = [calculo for calculo in calculos if uuid.UUID(calculo['id']) != id_uuid]
     
     return {"mensagem": "calculo removido com sucesso"}
+
+# ------------------------------------------------
 
 @app.route("/editar/<id>", methods=["PUT"])
 def editar_item(id):
